@@ -9,9 +9,9 @@ app = FastAPI(title="ThreatLens AI")
 sms_model = joblib.load("SMS_Model/model.pkl")
 sms_vectorizer = joblib.load("SMS_Model/vectorizer.pkl")
 
-# URL model (naya, text based)
-url_vectorizer = joblib.load("URL_Model/url_vectorizer.pkl")
-url_model = joblib.load("URL_Model/url_text_model.pkl")
+# URL model (files upload_url/URL_Model folder ke andar hain)
+url_vectorizer = joblib.load("upload_url/URL_Model/url_vectorizer.pkl")
+url_model = joblib.load("upload_url/URL_Model/url_text_model.pkl")
 
 
 def clean_url(u):
